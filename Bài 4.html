@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=0;
+    let next=1;
+    let Total;
+    let count=2;
+    while (count<20){
+        Total=num+next;
+        count++;
+        num=next;
+        next=Total;
+        if(Total%5==0) {
+            break;
+        }
+    }
+    document.write("Số chia hết cho 5 đầu tiên trong dãy fibonaccy là "+Total);
+</script>
+</body>
+</html>
